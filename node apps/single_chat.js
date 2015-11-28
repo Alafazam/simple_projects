@@ -1,6 +1,9 @@
 var net = require('net')
 var chatServer = net.createServer()
+
 console.log("chat Server started");
+
+
 chatServer.on('connection', function(client) {
     console.log("Client Connnected");
     client.write('Hi!\n');
