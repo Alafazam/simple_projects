@@ -6,8 +6,12 @@ app.get('/', function(req, res){
   res.sendfile('index.html');
 });
 
+
+
 io.on('connection', function(socket){
-  console.log('a user connected');
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
+  });
 });
 
 http.listen(3000, function(){
