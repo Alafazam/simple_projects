@@ -1,5 +1,6 @@
 var readlineSync = require('readline-sync'),
-    util = require('util');
+	format = require('string-format');
+format.extend(String.prototype);
 
 question = {
     'question': 'In Java, Which method must be implemented by all threads? :',
