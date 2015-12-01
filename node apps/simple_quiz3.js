@@ -15,9 +15,9 @@ answer = readlineSync.question(ask(question), {
 });
 
 if (answer == question.correctOption) {
-    console.log(util.format('Yes, correct answer is %s method', question.correctAnswer));
+    console.log('Yes, correct answer is {correctAnswer} method'.format(question));
 } else {
-    console.log(util.format('No, correct answer is %s method', question.correctAnswer));
+    console.log('No, correct answer is {correctAnswer} method'.format(question));
 };
 
 
