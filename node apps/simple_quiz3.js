@@ -1,17 +1,19 @@
 var readlineSync = require('readline-sync'),
-	format = require('string-format');
+	format = require('string-format'),
+	chalk = require('chalk').styles;
+
 format.extend(String.prototype);
 
 question = {
-    'question': 'In Java, Which method must be implemented by all threads? :',
+    'question': 'In Java, Which method must be implemented by all threads?',
     'options': ['wait()', 'start()', 'stop()', 'run()'],
-    'correctOption': 'D',
+    'correctOption': 'd',
     'correctAnswer': 'run()'
 }
 
 
 answer = readlineSync.question(ask(question), {
-    limit: ['A', 'B', 'C', 'D']
+    limit: ['a', 'b', 'c', 'd']
 });
 
 if (answer == question.correctOption) {
@@ -22,5 +24,5 @@ if (answer == question.correctOption) {
 
 
 function ask(ques) {
-    return '\n{question}:\nA : {options.0}\nB : {options.2}\nC : {options.2}\nD : {options.3}\n'.format(ques);
+    return '\n{question}:\na : {options.0}\nb : {options.2}\nc : {options.2}\nd : {options.3}\n'.format(ques);
 }
