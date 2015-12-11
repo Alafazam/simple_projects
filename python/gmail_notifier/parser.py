@@ -21,7 +21,7 @@ driver.find_element_by_id("next").click()
 
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "Passwd")) )
 
-driver.find_element_by_name('Passwd').send_keys("trilok786")
+driver.find_element_by_name('Passwd').send_keys("XXXXX")
 driver.find_element_by_id("signIn").click()
 
 
@@ -29,7 +29,7 @@ WebDriverWait(driver, 25).until(EC.presence_of_element_located((By.CLASS_NAME, "
 element = driver.find_element_by_class_name("UI")
 
 
-print element
+print element.content
 
 
 driver.quit()
