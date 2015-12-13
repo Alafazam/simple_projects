@@ -38,6 +38,6 @@ WebDriverWait(driver, 25).until(EC.presence_of_element_located((By.CLASS_NAME, "
 element = driver.find_element_by_class_name("UI")
 
 
-print element.html
+print element.get_attribute("innerHTML")
 
 driver.quit()
