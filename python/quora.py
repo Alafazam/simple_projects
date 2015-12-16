@@ -16,11 +16,14 @@ userpassword = config.get('credentials', 'password')
 
 driver.set_window_size(1120, 550)
 
+print 'loading quora now'
 driver.get("https://quora.com/")
-assert "Quora" in driver.title
+print 'quora loaded'
 
 
 driver.find_element_by_name('email').send_keys(username)
+print 'email found'
+
 
 driver.find_element_by_name('password').send_keys(userpassword)
 
