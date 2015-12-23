@@ -24,6 +24,9 @@
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
 
+(function(){
+
+
   var username = '';
   var socket = io();
   $('form').submit(function(){
@@ -46,6 +49,7 @@
     socket.emit('username',{'username':username,'id':id});
   });
 
+})();
 
 
 </script>
