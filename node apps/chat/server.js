@@ -3,31 +3,31 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var connections = [];
 
-
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', function(socket){
-    connections.push(socket);
 
-    console.log('a user connected');
+    var number = socket.id;
+    var username = '';
+
+    socket.emit('request login',{'id':number});
+
+    socket.on('username',function (data) {
+        username = data.username;
+        connections['id'] = username;
+    })
+
 
     socket.on('chat message', function(msg){
-        
-        if (msg=='connections') {
-            io.emit('chat message', connections);
-        }else{
-            io.emit('chat message', msg);
-        }
-        
-        console.log(msg);
-
+        io.emit('chat message',{'username':username,'msg':msg});
+        console.log(username + ' said ' + msg);
     });
 
 
     socket.on('disconnect', function(){
-        console.log('user disconnected');
+        console.log(username +' got disconnected');
   });
 
 
