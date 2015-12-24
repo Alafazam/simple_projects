@@ -45,7 +45,7 @@
   });
   socket.on('request login', function(data){
     id = data.id;
-    username = prompt('please enter your usename');
+    username = prompt('please enter your usename')|| 'newUser';
     socket.emit('username',{'username':username,'id':id});
   });
 
