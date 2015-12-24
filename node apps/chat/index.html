@@ -8,8 +8,9 @@
       form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
       form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
       form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      .right{ text-align: right}
       #messages { list-style-type: none; margin: 0; padding: 0; }
-      #messages li { padding: 5px 10px; }
+      #messages li {     height: 33px;    padding: 9px;    display: block; }
       #messages li:nth-child(odd) { background: #eee; }
     </style>
   </head>
@@ -30,15 +31,21 @@
   var username = '';
   var socket = io();
   $('form').submit(function(){
+    if(!$('#m').val()||$('#m').val() == '')
+      return false;
+
     socket.emit('chat message', $('#m').val());
     $('#m').val('');
     return false;
   });
   socket.on('chat message', function(data){
     if(data.username == username){
-      data.username = 'me';
+      data.username = '';
+      $('#messages').append(   $('<li class=right>').text(data.msg)   );    
+    }else{
+      $('#messages').append(   $('<li>').text(data.username + ": " + data.msg)   );
+
     }
-    $('#messages').append(   $('<li>').text(data.username + ": " + data.msg)   );
   });
   socket.on('id', function(msg){
     console.log(msg);
