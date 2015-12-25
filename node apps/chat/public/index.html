@@ -12,7 +12,16 @@
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages li {     height: 33px;    padding: 9px;    display: block; }
       #messages li:nth-child(odd) { background: #eee; }
+      
+
+      #messages li {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-delay: 0.5s;
+      }
+
+
     </style>
+      <link rel="stylesheet" href="/animate.min.css">
   </head>
   <body>
     <ul id="messages"></ul>
@@ -41,10 +50,11 @@
   socket.on('chat message', function(data){
     if(data.username == username){
       data.username = '';
-      $('#messages').append(   $('<li class=right>').text(data.msg)   );    
+      $('#messages').append(   $('<li>').text(data.msg).addClass('right')   );    
     }else{
-      $('#messages').append(   $('<li>').text(data.username + ": " + data.msg)   );
-
+      $('#messages').append(   $('<li>').text(data.username + ": " + data.msg).addClass('animated rotateInUpLeft')   );
+      // $('#yourElement').addClass('animated bounceOutLeft');
+      // $('#newMsg li').removeClass('animate rotateInUpLeft').removeAttr('id');
     }
   });
   socket.on('id', function(msg){
