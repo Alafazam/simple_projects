@@ -3,6 +3,7 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var connections = [];
+var numberOfUsers = 0;
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/public/index.html');
@@ -11,6 +12,7 @@ app.get('/', function(req, res){
 app.use(express.static('public'));
 
 io.on('connection', function(socket){
+    numberOfUsers++;
 
     var number = socket.id;
     var username = '';
@@ -31,7 +33,8 @@ io.on('connection', function(socket){
 
     socket.on('disconnect', function(){
         console.log(username +' got disconnected');
-  });
+        numberOfUsers--;
+    });
 
 
 
