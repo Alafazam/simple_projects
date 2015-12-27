@@ -72,6 +72,10 @@
   socket.on('id', function(msg){
     console.log(msg);
   });
+  socket.on('user joined', function (data) {
+  console.log('' + data.username + ' has joined ' + 'now we have ' + data.numberOfUsers + ' users');
+  console.log(data.connections);
+  });
   socket.on('request login', function(data){
     id = data.id;
     username = prompt('please enter your usename')|| 'newUser';

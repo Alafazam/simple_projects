@@ -14,25 +14,33 @@ app.use(express.static('public'));
 io.on('connection', function(socket){
     numberOfUsers++;
 
-    var number = socket.id;
-    var username = '';
 
-    socket.emit('request login',{'id':number});
+    socket.username = '';
+
+    socket.emit('request login',{'id':socket.id});
 
     socket.on('username',function (data) {
-        username = data.username;
-        connections['id'] = username;
+        socket.username = data.username;
+        connections[numberOfUsers-1] = {
+            username:socket.username,
+            id:socket.id
+        };
+        socket.broadcast.emit('user joined', {
+          username: socket.username,
+          numberOfUsers: numberOfUsers,
+          connections:connections 
+        });
     })
 
 
     socket.on('chat message', function(msg){
-        io.emit('chat message',{'username':username,'msg':msg});
-        console.log(username + ' said ' + msg);
+        io.emit('chat message',{'username':socket.username,'msg':msg});
+        console.log(socket.username + ' said ' + msg);
     });
 
 
     socket.on('disconnect', function(){
-        console.log(username +' got disconnected');
+        console.log(socket.username +' got disconnected');
         numberOfUsers--;
     });
 
