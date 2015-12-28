@@ -25,10 +25,11 @@ io.on('connection', function(socket){
             username:socket.username,
             id:socket.id
         };
-        socket.broadcast.emit('user joined', {
-          username: socket.username,
+        socket.broadcast.emit('update users', {
+          status:'joined'
           numberOfUsers: numberOfUsers,
-          connections:connections 
+          connections:connections,
+          msg:socket.username+' joined'
         });
     })
 
@@ -42,6 +43,12 @@ io.on('connection', function(socket){
     socket.on('disconnect', function(){
         console.log(socket.username +' got disconnected');
         numberOfUsers--;
+        socket.broadcast.emit('update users', {
+          status:'disconnect'
+          numberOfUsers: numberOfUsers,
+          connections:connections,
+          msg:socket.username+' got disconnected'
+        });
     });
 
 
