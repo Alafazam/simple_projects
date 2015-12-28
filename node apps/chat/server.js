@@ -46,7 +46,6 @@ io.on('connection', function(socket){
         socket.broadcast.emit('update users', {
           status:'disconnect',
           numberOfUsers: numberOfUsers,
-          connections:connections,
           msg:socket.username+' got disconnected'
         });
     });
