@@ -26,7 +26,7 @@ io.on('connection', function(socket){
             id:socket.id
         };
         socket.broadcast.emit('update users', {
-          status:'joined'
+          status:'joined',
           numberOfUsers: numberOfUsers,
           connections:connections,
           msg:socket.username+' joined'
@@ -44,7 +44,7 @@ io.on('connection', function(socket){
         console.log(socket.username +' got disconnected');
         numberOfUsers--;
         socket.broadcast.emit('update users', {
-          status:'disconnect'
+          status:'disconnect',
           numberOfUsers: numberOfUsers,
           connections:connections,
           msg:socket.username+' got disconnected'
