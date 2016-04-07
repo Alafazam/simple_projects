@@ -8,7 +8,6 @@ parser.add_argument('url', help='url for dowloading')
 parser.add_argument('-l', '--filename', default='', help='Local filename')
 args = parser.parse_args()
 
-# url = "https://raw.githubusercontent.com/Alafazam/lecture_notes/master/Cormen%20.pdf"
 
 def download_file(url, local_filename) :
   if local_filename == '':
@@ -26,12 +25,13 @@ def download_file(url, local_filename) :
         dl += len(chunk)
         f.write(chunk)
         done = int(50 * dl / total_length)
-        sys.stdout.write("\r[%s%s]" % ('=' * done, ' ' * (50-done)))
-        # print ''
-  return (time.clock() - start)
+        speed = (dl / (time.clock() - start))/1024
+        sys.stdout.write("\r[%s%s] %s kbps" % ('=' * done, ' ' * (50-done), speed))
+  return (time.clock() - start),speed
 
 
 
-time_elapsed = download_file(args.url,args.filename)
+time_elapsed, avg_speed = download_file(args.url,args.filename)
 print "Download complete..."
 print "Time Elapsed: " + str(time_elapsed)
+print "Average Speed: " + str(avg_speed)
