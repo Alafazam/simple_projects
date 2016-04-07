@@ -14,7 +14,7 @@ def download_file(url, local_filename) :
       local_filename = url.split('/')[-1]
   localFilename = url.split('/')[-1]
   with open(localFilename, 'wb') as f:
-    start = time.clock()
+    start = time.time()
     r = requests.get(url, stream=True)
     total_length = int(r.headers.get('content-length'))
     dl = 0
@@ -25,13 +25,14 @@ def download_file(url, local_filename) :
         dl += len(chunk)
         f.write(chunk)
         done = int(50 * dl / total_length)
-        speed = (dl / (time.clock() - start))/1024
-        sys.stdout.write("\r[%s%s] %s kbps" % ('=' * done, ' ' * (50-done), speed))
-  return (time.clock() - start),speed
+        output_time = (time.time() - start)
+        speed = str(dl/output_time/1024)
+        sys.stdout.write("\r[%s%s] %s KiloByte/s" % ('=' * done, ' ' * (50-done), speed))
+  return (time.time() - start),speed
 
 
 
 time_elapsed, avg_speed = download_file(args.url,args.filename)
 print "Download complete..."
 print "Time Elapsed: " + str(time_elapsed)
-print "Average Speed: " + str(avg_speed)
+print "Average Speed: " + str(avg_speed) + " KiloByte/s"
