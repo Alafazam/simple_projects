@@ -19,21 +19,14 @@ def download_file(url, local_filename) :
     dl = 0
     start = time.time()
     r = requests.get(url, stream=True)
-    total_length = int(r.headers.get('content-length'))
+    total_length = int(r.headers.get('content-length'))/1024
     if total_length is None: # no content length header
       f.write(r.content)
     else:
-      for chunk in tqdm(r.iter_content(chunk_size=1024)):
+      for chunk in tqdm(r.iter_content(chunk_size=1024),total=total_length, leave=True, unit='KB'):
         f.write(chunk)
-        dl += len(chunk)
-        done = int(50 * dl / total_length)
-        output_time = (time.time() - start)
-        speed = str(dl/output_time/1024)
-        sys.stdout.write("\r[%s%s] %s KiloByte/s" % ('=' * done, ' ' * (50-done), speed))
-  return (time.time() - start),speed
+  return localFilename
 
-
-time_elapsed,avg_speed = download_file(args.url,args.filename)
+filename = download_file(args.url,args.filename)
 print "Download complete..."
-print "Time Elapsed: " + str(time_elapsed)
-print "Average Speed: " + str(avg_speed) + " KiloByte/s"
+print "" + filename + " saved"
