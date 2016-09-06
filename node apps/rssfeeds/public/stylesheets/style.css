@@ -1,0 +1,34 @@
+.input_padding_ {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.widht_100p {
+    width: 100%;
+}
+
+.margin_top_100{
+    margin-top:100px;
+}
+
+span.badge{
+    position: relative;
+    float: right;
+}
+
+div.title_text{
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5em;
+}
+
+.btn-flat:hover {
+    color:white;
+    background-color: rgba(76,175,80,0.7);
+    box-shadow: none;
+}
+
+a.btn-flat{
+    color:#03a9f4;
+}

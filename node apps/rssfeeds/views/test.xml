@@ -1,0 +1,53 @@
+<li id="main_li">
+    <div class="collapsible-header collection-item active avatar">
+        <a href="http://www.reddit.com/r/Overwatch/comments/4ww3i9/sombra_arg_stop_looking_inside_the_game_or_in_the/d6azvbi" id="entryId">
+            <i class="material-icons small">label_outline</i>
+        </a>
+
+        <a href="http://www.reddit.com/user/alienth" id="authorName" class="waves-effect waves-red btn-flat">/u/alienth</a>
+        <span id="categoryTerm" class="badge">
+            <a href="http://www.reddit.com/r/Overwatch" class="waves-effect waves-red btn-flat">Overwatch</a>
+        </span>
+        <div class="entryTitle title">/u/alienth on ( SOMBRA ARG ) Stop looking inside the game or in the archievements</div>
+    </div>
+    <div id="content_body" class="collapsible-body contains_table">
+    </div>
+</li>
+
+<li id="main_li">
+    <div class="collapsible-header collection-item active avatar">
+        <a href='http://www.reddit.com/r/Overwatch/comments/4ww3i9/sombra_arg_stop_looking_inside_the_game_or_in_the/d6azvbi' id='entryId'>
+            <i class="material-icons small">label_outline</i>
+        </a>
+        <a href='http://www.reddit.com/user/alienth' id="authorName" class="waves-effect waves-red btn-flat">/u/alienth</a>
+        <span id="categoryTerm" class="badge">
+            <a href='http://www.reddit.com/r/Overwatch' class="waves-effect waves-red btn-flat">Overwatch</a>
+        </span>
+        <div class="entryTitle title">/u/alienth on ( SOMBRA ARG ) Stop looking inside the game or in the archievements</div>
+    </div>
+    <div id="content_body" class="collapsible-body contains_table">
+    </div>
+</li>
+{{
+  console.log(window.baseurl);
+}}
+
+<li id="main_li">
+    <div class="collapsible-header collection-item active avatar">
+        <a href='{{=it.entryLink}}' id='entryId'>
+            <i class="material-icons small">label_outline</i>
+        </a>
+        <a href='{{=it.authorUri}}' id="authorName" class="waves-effect waves-red btn-flat">{{=it.authorName}}</a>
+        <span id="categoryTerm" class="badge">
+            <a href='{{=it.categoryLabel}}' class="waves-effect waves-red btn-flat">{{=it.categoryTerm}}</a>
+        </span>
+        <div class="entryTitle title">{{=it.entryTitle}}</div>
+    </div>
+    <div id="content_body" class="collapsible-body contains_table">
+        {{=it.contents_}}
+    </div>
+</li>
+
+
+<div>Hi {{=it.name}}!</div>
+<div>{{=it.age || ''}}</div>

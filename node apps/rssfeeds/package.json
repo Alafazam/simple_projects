@@ -1,0 +1,30 @@
+{
+  "name": "followme",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js",
+    "main": "server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "express": "~4.14.0",
+    "express-session": "~1.14.0",
+    "feedparser": "^1.1.4",
+    "jade": "~1.11.0",
+    "lodash": "~4.13.1",
+    "mongoose": "~4.5.6",
+    "morgan": "~1.7.0",
+    "multer": "~1.1.0",
+    "pug": "*",
+    "request": "^2.74.0",
+    "sax": "^1.2.1",
+    "socket.io": "~1.4.8",
+    "superagent": "^2.2.0",
+    "underscore": "^1.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alafazam/demo.git"
+  }
+}

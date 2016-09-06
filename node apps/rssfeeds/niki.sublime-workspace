@@ -1,0 +1,1241 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fl",
+				"flag_zero"
+			],
+			[
+				"max",
+				"_max3"
+			],
+			[
+				"s",
+				"sca	myScanf"
+			],
+			[
+				"su",
+				"super_duper_p"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"le",
+				"lengths"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"w",
+				"whil	myWhile"
+			],
+			[
+				"gen",
+				"genrateColor"
+			],
+			[
+				"item",
+				"items_names"
+			],
+			[
+				"eve",
+				"eventEmitter"
+			],
+			[
+				"ev",
+				"eventEmitter"
+			],
+			[
+				"subs",
+				"subscribtion"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"ov",
+				"ovy	overflow-y: ${1:hidden};"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ma",
+				"mah-n	max-height: none;"
+			],
+			[
+				"updated",
+				"Updated"
+			],
+			[
+				"new",
+				"new_item"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"RC",
+				"RCF2"
+			],
+			[
+				"RE",
+				"RE_all"
+			],
+			[
+				"mo",
+				"movies"
+			],
+			[
+				"get",
+				"getInfo"
+			],
+			[
+				"e",
+				"end"
+			],
+			[
+				"m",
+				"movie"
+			],
+			[
+				"movie",
+				"movieId"
+			],
+			[
+				"n",
+				"nSquare_similarity_matrix"
+			],
+			[
+				"base",
+				"baseAlgos"
+			],
+			[
+				"V",
+				"V_original"
+			],
+			[
+				"Item",
+				"ItemCF"
+			],
+			[
+				"u",
+				"userid"
+			],
+			[
+				"user",
+				"userid"
+			],
+			[
+				"ge",
+				"gender"
+			],
+			[
+				"user_",
+				"user_rating"
+			],
+			[
+				"U",
+				"USER_CF"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"test",
+				"test_set"
+			],
+			[
+				"Simi",
+				"similarity_matrix"
+			],
+			[
+				"v",
+				"v2"
+			],
+			[
+				"mov",
+				"Movie"
+			],
+			[
+				"tes",
+				"test_data"
+			],
+			[
+				"sum",
+				"sum_simi"
+			],
+			[
+				"co",
+				"cosine_similarity"
+			],
+			[
+				"avera",
+				"average_rating"
+			],
+			[
+				"ba",
+				"_basedir"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"st",
+				"start_a"
+			],
+			[
+				"All",
+				"ALL_MOVIES"
+			],
+			[
+				"a",
+				"aSum"
+			],
+			[
+				"I",
+				"I_U"
+			],
+			[
+				"us",
+				"userID"
+			],
+			[
+				"n_",
+				"n_V"
+			],
+			[
+				"LO",
+				"LoadMovies"
+			],
+			[
+				"Lo",
+				"LoadRatings"
+			],
+			[
+				"pre",
+				"pearson_similarity"
+			],
+			[
+				"use",
+				"userID"
+			],
+			[
+				"p",
+				"print"
+			],
+			[
+				"M",
+				"M_i_j"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"def",
+				"defs	Method"
+			],
+			[
+				"y",
+				"y_val_"
+			],
+			[
+				"x",
+				"x_time_"
+			],
+			[
+				"con",
+				"continue"
+			],
+			[
+				"per",
+				"performance"
+			],
+			[
+				"pe",
+				"performance"
+			],
+			[
+				"si",
+				"similarUsers_greedy"
+			],
+			[
+				"US",
+				"US1"
+			],
+			[
+				"simi",
+				"get_similar_users"
+			],
+			[
+				"in",
+				"intersection"
+			],
+			[
+				"sim",
+				"similarity_matrix"
+			],
+			[
+				"cos",
+				"cosine_similarity"
+			],
+			[
+				"se",
+				"seedX"
+			],
+			[
+				"ap",
+				"append"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"Mo",
+				"MovieInfo"
+			],
+			[
+				"g",
+				"genre"
+			],
+			[
+				"da",
+				"data_array"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"na",
+				"namespace"
+			],
+			[
+				"sess",
+				"sessionInit"
+			],
+			[
+				"so",
+				"socket"
+			],
+			[
+				"op",
+				"openAll"
+			],
+			[
+				"emo",
+				"emojify"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"hash",
+				"_hash"
+			],
+			[
+				"me",
+				"messages_recieved"
+			],
+			[
+				"ms",
+				"message"
+			],
+			[
+				"to",
+				"total_count"
+			],
+			[
+				"col",
+				"collect_profiles"
+			],
+			[
+				"typ",
+				"type_of_action"
+			],
+			[
+				"row",
+				"rows"
+			],
+			[
+				"r",
+				"rip_"
+			],
+			[
+				"lon",
+				"longest_streak"
+			],
+			[
+				"fo",
+				"followers"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"_",
+				"_icon"
+			],
+			[
+				"icon",
+				"icon"
+			],
+			[
+				"P",
+				"PLACE_ICON"
+			],
+			[
+				"map",
+				"setMapType"
+			],
+			[
+				"laye",
+				"layers-popover"
+			],
+			[
+				"details",
+				"getDetailsString"
+			],
+			[
+				"pla",
+				"place"
+			],
+			[
+				"pl",
+				"place"
+			],
+			[
+				"Pla",
+				"PlaceStore"
+			],
+			[
+				"Loa",
+				"LOADING"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"pram",
+				"paramType"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"sho",
+				"show-search"
+			],
+			[
+				"la",
+				"latitude"
+			],
+			[
+				"i",
+				"_inBackground"
+			],
+			[
+				"_in",
+				"_inBackground"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"place",
+				"placeStore"
+			],
+			[
+				"geo",
+				"_geoclue"
+			],
+			[
+				"_b",
+				"_bogie"
+			],
+			[
+				"Ca",
+				"Cairo"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"_ma",
+				"_mapView"
+			],
+			[
+				"ca",
+				"catch"
+			],
+			[
+				"tr",
+				"try"
+			],
+			[
+				"A",
+				"Application"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 1268,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.js",
+			"settings":
+			{
+				"buffer_size": 521,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++11/C++11.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ant.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/Java.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 352.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 456.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"exit()",
+			"exit",
+			"clear()",
+			"clear",
+			"sublime.executable_path()",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/alaf/repo/Hire/niki"
+	],
+	"file_history":
+	[
+		"/home/alaf/repo/bogiefeeds/index.js",
+		"/usr/share/themes/Flat-Plat/gnome-shell/_colors.scss",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/_colors.scss",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/gtk-dark.css",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/gtk-dark_laptop.css",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/gtk.css",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/gtk_laptop.css",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/_apps.scss",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/README",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/gtk-dark.scss",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/parse-sass.sh",
+		"/usr/share/themes/Flat-Plat/README.md",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/render-assets.sh",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/Gemfile",
+		"/usr/share/themes/Flat-Plat/gtk-3.0/_colors-public.scss",
+		"/usr/share/themes/Flat-Plat/gnome-shell/_common.scss",
+		"/usr/share/themes/Flat-Plat/gnome-shell/_drawing.scss",
+		"/usr/share/themes/Flat-Plat/gnome-shell/_extensions.scss",
+		"/media/sda7/Downloads/Extensions/netspeed@hedayaty.gmail.com.v26.shell-extension/metadata.json",
+		"/media/sda7/Downloads/Extensions/icon-hider@kalnitsky.org.v16.shell-extension/metadata.json",
+		"/media/sda7/Downloads/Extensions/drop-down-terminal@gs-extensions.zzrough.org.v22.shell-extension/metadata.json",
+		"/media/sda7/Downloads/user-theme@gnome-shell-extensions.gcampax.github.com.v27.shell-extension/metadata.json",
+		"/home/alaf/.local/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com/metadata.json",
+		"/media/sda7/Downloads/caffeine@patapon.info/metadata.json",
+		"/media/sda7/Downloads/caffeine@patapon.info.v25.shell-extension/metadata.json",
+		"/home/alaf/jhbuild/checkout/gnome-maps/src/searchPopup.js",
+		"/home/alaf/jhbuild/checkout/gnome-maps/src/org.gnome.Maps.src.gresource.xml",
+		"/home/alaf/jhbuild/checkout/gnome-maps/src/main.js",
+		"/boot/grub2/grub.cfg",
+		"/home/alaf/jhbuild/checkout/gnome-maps/src/org.gnome.Maps.BackgroundService.src.gresource",
+		"/home/alaf/programming/codechef/input.cpp",
+		"/home/alaf/programming/codechef/LONGSEQ.cpp",
+		"/home/alaf/programming/spoj/COINS - Bytelandian gold coins.c",
+		"/home/alaf/programming/codechef/COINS.cpp",
+		"/home/alaf/.cache/.fr-JkHgXC/input001.txt",
+		"/home/alaf/programming/spoj/COINS.cpp",
+		"/home/alaf/programming/codechef/ALPHABET.cpp",
+		"/home/alaf/programming/codechef/CHEFFILT.cpp",
+		"/home/alaf/programming/codechef/LFSTACK2.cpp",
+		"/home/alaf/programming/codechef/LFSTACK.cpp",
+		"/home/alaf/programming/codechef/CHEFPATH.cpp",
+		"/home/alaf/programming/codechef/BIPIN3.cpp",
+		"/home/alaf/programming/codechef/CHCHCL.cpp",
+		"/media/sda7/EVERYTHING/Books/Resume/Resume.txt",
+		"/media/sda7/EVERYTHING/Books/Resume/Resume.md",
+		"/home/alaf/programming/codechef/CHEFRRUN.cpp",
+		"/home/alaf/repo/easy_chat/views/chatroom.jade",
+		"/home/alaf/repo/easy_chat/public/javascripts/templateParser.js",
+		"/home/alaf/repo/easy_chat/public/javascripts/clientConnection.js",
+		"/home/alaf/repo/easy_chat/config.js",
+		"/home/alaf/repo/Hire/demo/models/item.js",
+		"/home/alaf/repo/Hire/demo/routes/api.js",
+		"/home/alaf/repo/Hire/demo/package.json",
+		"/home/alaf/repo/Hire/demo/views/index.jade",
+		"/home/alaf/repo/Hire/demo/views/watch.jade",
+		"/home/alaf/repo/Hire/demo/routes/default.js",
+		"/home/alaf/repo/Hire/demo/server.js",
+		"/home/alaf/repo/Hire/demo/app.js",
+		"/home/alaf/repo/Hire/demo/config.js",
+		"/home/alaf/repo/Hire/demo/README.md",
+		"/home/alaf/repo/Hire/demo/.gitignore",
+		"/home/alaf/repo/Hire/Social Cops/views/watch.html",
+		"/home/alaf/repo/Hire/Social Cops/public/javascripts/init.js",
+		"/home/alaf/repo/Hire/Social Cops/public/stylesheets/watch-style.css",
+		"/home/alaf/repo/Hire/Social Cops/views/watch.jade",
+		"/home/alaf/repo/Hire/Social Cops/views/index.jade",
+		"/home/alaf/repo/Hire/Social Cops/routes/api.js",
+		"/home/alaf/repo/Hire/Social Cops/routes/default.js",
+		"/home/alaf/repo/Hire/Social Cops/config.js",
+		"/home/alaf/repo/Hire/Social Cops/app.js",
+		"/home/alaf/repo/Hire/Social Cops/untitled",
+		"/home/alaf/repo/easy_chat/app.js",
+		"/home/alaf/repo/easy_chat/user.js",
+		"/home/alaf/repo/easy_chat/connection.js",
+		"/home/alaf/repo/Hire/Social Cops/models/item.js",
+		"/home/alaf/repo/Hire/Social Cops/public/javascripts/materialize.min.js",
+		"/home/alaf/repo/Hire/Social Cops/public/stylesheets/materialize.min.css",
+		"/home/alaf/repo/Hire/Social Cops/public/javascripts/button.js",
+		"/home/alaf/repo/Hire/Social Cops/public/javascripts/jquery-2.1.1.min.js",
+		"/home/alaf/repo/Hire/Social Cops/public/stylesheets/Material_Icons.css",
+		"/home/alaf/repo/easy_chat/routes/chatroom.js",
+		"/home/alaf/repo/Hire/Social Cops/sessions/xYksEZvbHnJmjJaFxJ6f7FjLOzCPOnNC.json",
+		"/home/alaf/repo/Hire/Social Cops/views/layout.jade",
+		"/home/alaf/repo/Hire/Social Cops/nodemon.json",
+		"/home/alaf/repo/Hire/Social Cops/sessions/51-RuhAw6Qwz8vOQAP7NF3bQrbpCwlLH.json.1917905356",
+		"/home/alaf/repo/easy_chat/routes/index.js",
+		"/home/alaf/repo/easy_chat/routes/user.js",
+		"/home/alaf/repo/easy_chat/routes/create_room.js",
+		"/home/alaf/repo/Hire/Social Cops/models/bear.js",
+		"/home/alaf/repo/Hire/Social Cops/test.js",
+		"/home/alaf/repo/tiwari/app/templates/index.html",
+		"/home/alaf/repo/tiwari/app/__init__.py",
+		"/home/alaf/repo/project/app/get_dataset.py",
+		"/home/alaf/.cache/.fr-S8Enev/~Get Your Files Here - www.appwikia.com/AngularJs for the Real World - Learn by creating a WebApp/Important ! Readme.txt",
+		"/home/alaf/repo/project/app/templates/rating.html",
+		"/home/alaf/repo/project/app/templates/movieDetails.html",
+		"/home/alaf/repo/project/app/templates/addUser.html",
+		"/home/alaf/repo/project/app/recommeder.py",
+		"/home/alaf/repo/project/app/utils.py",
+		"/home/alaf/repo/project/app/models.py",
+		"/home/alaf/repo/project/app/comparison-data.txt",
+		"/home/alaf/repo/project/app/stats.txt",
+		"/home/alaf/repo/project/app/stats.csv",
+		"/home/alaf/repo/ML-practice/ml systems/iris.py",
+		"/home/alaf/repo/project/app/templates/login.html",
+		"/home/alaf/repo/project/app/five_fold_verification.py",
+		"/home/alaf/repo/codeChef_tool/demo.py",
+		"/home/alaf/repo/codeChef_tool/test_req.py",
+		"/home/alaf/repo/project/app/CF_test.py",
+		"/home/alaf/repo/project/app/RCF_vs_userCF.py",
+		"/home/alaf/repo/ML-practice/ml systems/iris.py_plot.png",
+		"/home/alaf/repo/Techvaganza/cgi-bin/ttv/app/__init__.py",
+		"/usr/lib64/python2.7/random.py",
+		"/home/alaf/repo/project/app/models.pyc",
+		"/home/alaf/repo/project/app/greedy_vs_n2.py",
+		"/home/alaf/repo/project/app/__init__.py",
+		"/home/alaf/repo/project/app/accuracy_test.py",
+		"/home/alaf/repo/project/app/ml-100k/u1.test",
+		"/home/alaf/repo/project/app/ml-100k/u1.base",
+		"/home/alaf/repo/project/app/five_fold_verification_UB.py",
+		"/home/alaf/repo/project/app/ml-100k/u5.test",
+		"/home/alaf/repo/project/app/ml-100k/u5.base",
+		"/home/alaf/repo/project/server.py",
+		"/home/alaf/repo/project/app/ml-100k/README",
+		"/home/alaf/repo/project/app/ml-100k/ua.test",
+		"/home/alaf/repo/project/app/templates/test.html",
+		"/home/alaf/repo/project/app/tfidf_test.py",
+		"/home/alaf/repo/project/app/templates/index.html"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 200.0,
+		"where_history":
+		[
+			"<project>",
+			"/home/alaf/jhbuild/checkout/gnome-maps/data/ui",
+			"<project>",
+			"<open files>",
+			"/home/alaf/jhbuild/checkout/gnome-maps/src"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"010240",
+			"0E0A4A",
+			"010240",
+			"607D8B",
+			"060B3B",
+			"607D8B",
+			"060B3B",
+			"607D8B",
+			"bar",
+			"menu",
+			"020970",
+			"bundle",
+			"080F73",
+			"546E7A",
+			"080F73",
+			"020970",
+			"080F73",
+			"base_color",
+			"FF4081",
+			"FF5252",
+			"E040FB",
+			"40C4FF",
+			"42A5F5",
+			"263238",
+			"37474F",
+			"263238",
+			"546E7A",
+			"455A64",
+			"FF4081",
+			"40C4FF",
+			"42A5F5",
+			"263238",
+			"607D8B",
+			"flag_one",
+			"return",
+			"anum",
+			"_max",
+			"1000000000",
+			"100005",
+			"func2",
+			"10000009",
+			"long long",
+			"sequences",
+			"bogie",
+			"reboto",
+			"super_duper_p",
+			"reboto",
+			"super_duper_p",
+			"reboto",
+			"indexumist",
+			"count",
+			"ind",
+			"len",
+			"num",
+			" i",
+			"i",
+			"lengths",
+			"search",
+			"count",
+			"fin",
+			"length",
+			"lengths",
+			"sequences",
+			"counters",
+			"known",
+			"acfty",
+			" ",
+			"colorCLass",
+			"color",
+			"parseTemplate",
+			"colorCLass",
+			"getColor",
+			"FileStore",
+			"items_names",
+			"subscribtions",
+			"subscriptions",
+			"subscribe",
+			"post",
+			"subscribtion",
+			"Subscribtion",
+			"subscribtion",
+			"Subscribtion",
+			"subscribtion",
+			"Subscribtion",
+			"subscribtion",
+			"Subscribtion",
+			"subscribtion",
+			"subscribin",
+			"subscribing",
+			"subscribin",
+			"subscribing",
+			"session",
+			"secret",
+			"config",
+			"mongoDB_url",
+			"data",
+			"addUpdate",
+			"dbchange",
+			"dataase_updated",
+			"dbchange",
+			"dataase_updated",
+			"subscribtions",
+			"subscribtion",
+			"data_base_updated",
+			"dataase_updated",
+			"added",
+			"removed",
+			"item",
+			"subscribtions",
+			"value",
+			"subscribtion",
+			"subscribtions",
+			"subscribtion_of",
+			"all_items",
+			"subscribtion",
+			"data_base_updated",
+			"updates_ul",
+			"addUpdate",
+			"Things",
+			"items",
+			"addUpdate",
+			"updates_ul",
+			"messageTemplate",
+			"notification",
+			"notifications",
+			"subscribe",
+			"notification",
+			"data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								419,
+								419
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 60.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 173.0
+	},
+	"output.find_results":
+	{
+		"height": 126.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "niki.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pla",
+				"place.js"
+			],
+			[
+				"stored",
+				"storedRoute.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/repo/codecheftool.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
