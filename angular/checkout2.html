@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <style>
+    body {
+        background-color: rgba(86, 61, 124, .15);
+    }
+    
+    .card {
+        background-color: #fff;
+        min-height: 400px;
+        margin-top: 30px;
+    }
+    
+    .row .bdr {
+        border: solid 1px rgba(51, 51, 51, 0.12);
+        padding: 4px;
+        padding-left: 10px;
+    }
+    
+    label.row.s1.time_slots {
+        margin-left: 15px;
+    }
+    
+    div.row.lowMargin {
+        margin-bottom: 5px;
+    }
+    
+    .card .card-content {
+        padding-top: 10px;
+    }
+    
+    .left_panel {
+        border-right: solid 1px #e3e3e3;
+        padding-right: 6% !important;
+    }
+    
+    input[type="radio"]:not(:checked)+label.time_slot_label,
+    [type="radio"]:checked+label.time_slot_label {
+        position: relative;
+        padding-left: 0px;
+        cursor: pointer;
+        width: 100%;
+        display: inline-block;
+        height: 50px;
+        line-height: 25px;
+        font-size: .85rem;
+        transition: .28s ease;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 12.5px 0px;
+        text-align: center;
+    }
+    
+    input[type="radio"]:not(:checked)+label.time_slot_label {
+        background: #e8f5e9;
+    }
+    
+    input[type="radio"]:checked+label.time_slot_label {
+        background: #4caf50;
+        color: white;
+    }
+    
+    [type="radio"]:checked+label.time_slot_label:before,
+    [type="radio"]:not(:checked)+label.time_slot_label:before,
+    [type="radio"]:checked+label.time_slot_label:after,
+    [type="radio"]:not(:checked)+label.time_slot_label:after {
+        display: none;
+    }
+    
+    #orderSummaryCard {
+        margin-left: 4.15%;
+    }
+    
+    .border_top {
+        border-top: 1px solid rgba(160, 160, 160, 0.2);
+    }
+    
+    img.item_image {
+        width: 100%;
+    }
+    
+    span.change_item_q {
+        width: 20px;
+        display: inline-block;
+        /*border: solid 1px #E3E3E5;*/
+        text-align: center;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    
+    .payment_method > div {
+        background: #e3e3e3;
+        text-align: center;
+        padding: 8px;
+        margin-bottom: 1px;
+    }
+    
+    .payment_method > div:hover {
+        background: #4caf50;
+    }
+    
+    .payment_method > div.active {
+        background: #a5d6a7;
+    }
+    
+    #existing,
+    #new_card {
+        display: inline-block;
+        border: solid 1px #e3e3e3;
+        padding: 7px;
+        text-align: center;
+    }
+    
+    .row .col.offset-l2_3 {
+        margin-left: 5.555%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="stage_01" class="container">
+        <div class="card">
+            <div class="card-content ">
+                <div class="row lowMargin">
+                    <form class="col s12 m5 l6 left_panel">
+                        <div class="row">
+                            <span class="card-title">Add a new Address</span>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="add_" type="text" class="validate">
+                                <label for="add_">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input id="pincode" type="text" class="validate">
+                                <label for="pincode">Pincode</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input id="city" type="text" class="validate">
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input id="state" type="text" class="validate">
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="phone" type="text" class="validate">
+                                <label for="phone">Contact Number</label>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="save_" />
+                            <label for="save_">Save Address</label>
+                        </div>
+                    </form>
+                    <div class="col s12 m5 l5 offset-m1 offset-l1 ">
+                        <div class="row">
+                            <span class="card-title">Select delivery &amp; Installation</span>
+                        </div>
+                        <div class="row bdr">
+                            <span> Delivery</span>
+                            <div class="row lowMargin">
+                                <div class="input-field col s9">
+                                    <input type="date" class="datepicker" data-value='$expected_delivery_date || today'>
+                                    <label for="date">Date</label>
+                                </div>
+                            </div>
+                            <label class='s1 time_slots'>Time slots</label>
+                            <div class="row lowMargin">
+                                <div class="col s3">
+                                    <p class=''>
+                                        <input class='delivery_time_slot' name="delivery_time_slot" type="radio" id="delivery_slot1" />
+                                        <label class='time_slot_label' for="delivery_slot1">10am-2pm</label>
+                                    </p>
+                                </div>
+                                <div class="col s3">
+                                    <p class=''>
+                                        <input class='delivery_time_slot' name="delivery_time_slot" type="radio" id="delivery_slot2" />
+                                        <label class='time_slot_label' for="delivery_slot2">10am-2pm</label>
+                                    </p>
+                                </div>
+                                <div class="col s3">
+                                    <p class=''>
+                                        <input class='delivery_time_slot' name="delivery_time_slot" type="radio" id="delivery_slot3" />
+                                        <label class='time_slot_label' for="delivery_slot3">10am-2pm</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bdr">
+                            <span> Installation</span>
+                            <div class="row lowMargin">
+                                <div class="input-field col s9">
+                                    <input type="date" class="datepicker" data-value='$expected_installation_date || today'>
+                                    <label for="date">Date</label>
+                                </div>
+                            </div>
+                            <label class='s1 time_slots'>Time slots</label>
+                            <div class="row lowMargin">
+                                <div class="col s3">
+                                    <p class=''>
+                                        <input class='installation_time_slot' name="installation_time_slot" type="radio" id="installation_slot1" />
+                                        <label class='time_slot_label' for="installation_slot1">10am-2pm</label>
+                                    </p>
+                                </div>
+                                <div class="col s3">
+                                    <p class=''>
+                                        <input class='installation_time_slot' name="installation_time_slot" type="radio" id="installation_slot2" />
+                                        <label class='time_slot_label' for="installation_slot2">10am-2pm</label>
+                                    </p>
+                                </div>
+                                <div class="col s3">
+                                    <p class=''>
+                                        <input class='installation_time_slot' name="installation_time_slot" type="radio" id="installation_slot3" />
+                                        <label class='time_slot_label' for="installation_slot3">10am-2pm</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-action">
+                <div class="row" style='margin-bottom:5px;'>
+                    <div class="col offset-s8 offset-m9 offset-l9">
+                        <button id='proceed_btn' class='waves-effect waves-light btn '>Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stage_02" class="row">
+        <div id='orderSummaryCard' class="card col s12 m10 l5 offset-l2_3 offset-m2" ">
+            <div class="card-content ">
+                <div class="row lowMargin ">
+                    <div class="col s12 m5 l12 ">
+                        <div class="row ">
+                            <span class="card-title ">Confirm Order</span>
+                        </div>
+                        <div class="row ">
+                            <span>Delivery Address</span>
+                            <p>Jhone Doe</p>
+                            <p>34 Ashoka Colony 34 Ashoka Colony34 Ashoka Colony</p>
+                            <p>Indore, 452014</p>
+                            <p>Madhya Pradesh</p>
+                        </div>
+                        <div class="row lowMargin ">
+                            <p>Delivery Time : <span>10am to 2pm</span></p>
+                        </div>
+                        <div class="row ">
+                            <p>Installation Time : <span>10am to 2pm</span></p>
+                        </div>
+                        <div class="row lowMargin ">Items : Item.count</div>
+                        <div class="cartItems ">
+                            <div class="row lowMargin ">
+                                <div class="col s2 item_image " style='padding-left: 0px;'>
+                                    <img class='item_image' src="file:///home/alaf/repo/hy/mockups/homeyantra/images/full_wireframes/u77.png " alt=" ">
+                                </div>
+                                <div class="col s6 ">
+                                    <p>Bosch WAK24168IN Fully-automatic Front-loading Washing Machine (7 Kg, Grey)</p>
+                                </div>
+                                <div class="col s3 item_count row ">
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_down</i></span>
+                                    <span class='change_item_q'>2</span>
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_up</i></span>
+                                </div>
+                                <div class="col s1 item_count row ">
+                                    <span id='remove_item' class=''><i class="tiny material-icons ">clear</i></span>
+                                </div>
+                            </div>
+                            <div class="row lowMargin ">
+                                <div class="col s2 item_image " style='padding-left: 0px;'>
+                                    <img class='item_image' src="file:///home/alaf/repo/hy/mockups/homeyantra/images/full_wireframes/u77.png " alt=" ">
+                                </div>
+                                <div class="col s6 ">
+                                    <p>Bosch WAK24168IN Fully-automatic Front-loading Washing Machine (7 Kg, Grey)</p>
+                                </div>
+                                <div class="col s3 item_count row ">
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_down</i></span>
+                                    <span class='change_item_q'>2</span>
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_up</i></span>
+                                </div>
+                                <div class="col s1 item_count row ">
+                                    <span id='remove_item' class=''><i class="tiny material-icons ">clear</i></span>
+                                </div>
+                            </div>
+                            <div class="row lowMargin ">
+                                <div class="col s2 item_image " style='padding-left: 0px;'>
+                                    <img class='item_image' src="file:///home/alaf/repo/hy/mockups/homeyantra/images/full_wireframes/u77.png " alt=" ">
+                                </div>
+                                <div class="col s6 ">
+                                    <p>Bosch WAK24168IN Fully-automatic Front-loading Washing Machine (7 Kg, Grey)</p>
+                                </div>
+                                <div class="col s3 item_count row ">
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_down</i></span>
+                                    <span class='change_item_q'>2</span>
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_up</i></span>
+                                </div>
+                                <div class="col s1 item_count row ">
+                                    <span id='remove_item' class=''><i class="tiny material-icons ">clear</i></span>
+                                </div>
+                            </div>
+                            <div class="row lowMargin ">
+                                <div class="col s2 item_image " style='padding-left: 0px;'>
+                                    <img class='item_image' src="file:///home/alaf/repo/hy/mockups/homeyantra/images/full_wireframes/u77.png " alt=" ">
+                                </div>
+                                <div class="col s6 ">
+                                    <p>Bosch WAK24168IN Fully-automatic Front-loading Washing Machine (7 Kg, Grey)</p>
+                                </div>
+                                <div class="col s3 item_count row ">
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_down</i></span>
+                                    <span class='change_item_q'>2</span>
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_up</i></span>
+                                </div>
+                                <div class="col s1 item_count row ">
+                                    <span id='remove_item' class=''><i class="tiny material-icons ">clear</i></span>
+                                </div>
+                            </div>
+                            <div class="row lowMargin ">
+                                <div class="col s2 item_image " style='padding-left: 0px;'>
+                                    <img class='item_image' src="file:///home/alaf/repo/hy/mockups/homeyantra/images/full_wireframes/u77.png " alt=" ">
+                                </div>
+                                <div class="col s6 ">
+                                    <p>Bosch WAK24168IN Fully-automatic Front-loading Washing Machine (7 Kg, Grey)</p>
+                                </div>
+                                <div class="col s3 item_count row ">
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_down</i></span>
+                                    <span class='change_item_q'>2</span>
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_up</i></span>
+                                </div>
+                                <div class="col s1 item_count row ">
+                                    <span id='remove_item' class=''><i class="tiny material-icons ">clear</i></span>
+                                </div>
+                            </div>
+                            <div class="row lowMargin ">
+                                <div class="col s2 item_image " style='padding-left: 0px;'>
+                                    <img class='item_image' src="file:///home/alaf/repo/hy/mockups/homeyantra/images/full_wireframes/u77.png " alt=" ">
+                                </div>
+                                <div class="col s6 ">
+                                    <p>Bosch WAK24168IN Fully-automatic Front-loading Washing Machine (7 Kg, Grey)</p>
+                                </div>
+                                <div class="col s3 item_count row ">
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_down</i></span>
+                                    <span class='change_item_q'>2</span>
+                                    <span class='change_item_q'><i class="material-icons ">keyboard_arrow_up</i></span>
+                                </div>
+                                <div class="col s1 item_count row ">
+                                    <span id='remove_item' class=''><i class="tiny material-icons ">clear</i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='border_top card-action'>
+                <div class="row " style='margin-bottom:5px;'>
+                    <span class="card-title col s10 m10 l10 ">Total amount payable</span>
+                    <span class="card-title right ">100000</span>
+                </div>
+            </div>
+        </div>
+        <div class="card col s12 m10 l5 offset-l2_3 offset-m2 ">
+            <div class="card-action row ">
+                <div class='col s10 m10 l10'>
+                    <p> Total amount payable</p>
+                </div>
+                <div class="col s1 m1 l1 pull-l1 ">
+                    <p>100000</p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col s3 payment_method ">
+                    <div id='creditCard' class="row active ">Credit Card</div>
+                    <div id='debitCard' class="row ">CREDIT CARD</div>
+                    <div id='netBanking' class="row ">NET BANKING</div>
+                    <div id='cod' class="row ">COD</div>
+                </div>
+                <style type="text/css ">
+                        #existing_cards .card_deatils {
+                            border: solid 1px #e3e3e3;
+                            height: 150px;
+                            padding: 20px;
+                        }
+                        
+                        #existing_cards .card_deatils .card_number_label input {
+                            border-bottom: 0px;
+                            margin-bottom: 5px;
+                            height: inherit;
+                            color: inherit;
+                        }
+                        </style>
+                <div class="col s8 ">
+                    <div id='creditCard_options'>
+                        <div class="row ">
+                            <div id='existing' class="col s4 offset-s2 ">
+                                Existing Card
+                            </div>
+                            <div id='new_card' class="col s4 ">
+                                New Card
+                            </div>
+                        </div>
+                        <div id='existing_cards' class="row ">
+                            <div class="row card_deatils ">
+                                <div class="row lowMargin ">
+                                    <div class='col s5 card_number_label'>Card number</div>
+                                    <div class='col s6 card_number_label'>
+                                        <input type="text " value='1234 5678 9876 5432' disabled>
+                                    </div>
+                                    <div>
+                                        <i class="material-icons ">clear</i>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col s5'>Name on card</div>
+                                    <div class='col s6'>Alaf Azam</div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col s2'>MM/YY</div>
+                                    <div class='col s2'>05/21</div>
+                                    <div class='col s0 offset-s2'>CVV</div>
+                                    <div class='col s2'>456</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js "></script>
+    <script>
+    $('.datepicker').pickadate({
+        selectMonths: false, // Creates a dropdown to control month
+        selectYears: 1, // Creates a dropdown of 15 years to control year
+        format: 'dd/mm/yy'
+    });
+
+    var stage_01 = $('#stage_01');
+    var stage_02 = $('#stage_02');
+    // var stage_03 = $('#stage_03');
+
+    $(document).ready(function() {
+        console.log('asd');
+        stage_01.show();
+        stage_02.hide();
+        $('#proceed_btn').click(function(e) {
+            console.log('asdsa');
+            e.preventDefault();
+            stage_01.hide();
+            stage_02.show();
+        });
+
+    });
+    </script>
+</body>
+
+</html>

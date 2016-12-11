@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+</head>
+<style>
+span {
+    display: block;
+}
+</style>
+
+<body ng-app="myapp">
+    <div ng-controller="MyController">
+        <span>{{myData.text}}</span>
+        <span ng-bind='myData.printHello()'></span>
+        <span ng-hide='myData.showit'>NG-HIDE</span>
+        <span ng-show='myData.showit'>NG-SHOW</span>
+        <span ng-if='myData.showit'>NG-IF Show it</span>
+        <div ng-switch on="myData.switch">
+            <div ng-switch-when="1">Shown when switch is 1</div>
+            <div ng-switch-when="2">Shown when switch is 2</div>
+            <div ng-switch-default>Shown when switch is anything else than 1 and 2</div>
+        </div>
+        <div>
+            <div ng-include="'angular-included-fragment.html'"></div>
+        </div>
+        <ol>
+            <li ng-repeat='item in myData.items'>{{item.text}}, {{$index}}</li>
+        </ol>
+        <ol>
+            <li ng-repeat='(key,value) in myData.objectz'>{{key}} : {{value}}</li>
+        </ol>
+        <div ng-repeat='item in myData.items | filter:itemFilter'>{{item.text}}</div>
+        <div>{{ myData.theDate | date : 'dd-MM-yyyy'}}</div>
+        <ol>
+            <li ng-repeat="item in myData.items | orderBy: sortField:reverse ">
+                {{item.text}} : {{$first}}, {{$middle}}, {{$last}}
+            </li>
+        </ol>
+    </div>
+    <script>
+    angular.module("myapp", [])
+        .controller("MyController", function($scope) {
+            $scope.myData = {};
+            $scope.myData.text = 'mydata ka text';
+            $scope.myData.showit = false;
+            $scope.myData.printHello = () => {
+                return 'prsintHello'
+            }
+            $scope.myData.switch = 1;
+            $scope.myData.items = [{
+                text: "one",
+                value: 1
+            }, {
+                text: "two",
+                value: 2
+            }, {
+                text: "three",
+                value: 3
+            }];
+            $scope.myData.objectz = {
+                'key1': 'value1',
+                'key2': 'value2',
+                'key3': 'value3'
+            }
+            $scope.itemFilter = (item) => {
+                if (item.text == "two") return false;
+                return true;
+            }
+            $scope.myData.theDate = new Date();
+            $scope.sortField = "value";
+            $scope.reverse = true;
+        });
+    </script>
+</body>
+
+</html>

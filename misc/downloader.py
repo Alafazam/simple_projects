@@ -4,7 +4,10 @@ import sys
 import time
 from tqdm import tqdm
 
+"""
+This is a script for downloading files through python
 
+"""
 parser = argparse.ArgumentParser(description='Download Large files using python.')
 parser.add_argument('url', help='url for dowloading')
 parser.add_argument('-l', '--filename', default='', help='Local filename')
